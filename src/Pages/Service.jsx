@@ -16,7 +16,9 @@ const Service = () => {
   return (
     <Mainlayout>
       <div className="text-center">
-        <h1 className="text-success">Fetch API Data [ <Logout/>]</h1>
+        <h1 className="text-success">
+          Fetch API Data : <Logout />
+        </h1>
         <div className="container">
           <div className="row">
             {users.map((user, index) => (
