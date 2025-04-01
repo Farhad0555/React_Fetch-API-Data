@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Mainlayout from "../Component/Mainlayout.jsx";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+import Logout from "../Component/Logout.jsx";
 const Service = () => {
   const [users, setUsers] = useState([]); // Correct state declaration
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Service = () => {
   return (
     <Mainlayout>
       <div className="text-center">
-        <h1 className="text-success">Fetch API Data</h1>
+        <h1 className="text-success">Fetch API Data [ <Logout/>]</h1>
         <div className="container">
           <div className="row">
             {users.map((user, index) => (
